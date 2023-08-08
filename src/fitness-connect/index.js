@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import HomeScreen from "./home-screen";
 import LoginSreen from "./user/login-screen";
-import RegisterSreen from "./user/register-screen";
+import RegisterScreen from "./user/register-screen";
 
 
 function FitnessConnect() {
@@ -14,7 +14,7 @@ function FitnessConnect() {
                     <Route path="/" element={<Navigate to="/fitness-connect/home" />} />
                     <Route path="/fitness-connect/home" element={<HomeScreen />} />
                     <Route path="/fitness-connect/login/" element={<LoginSreen />} />
-                    <Route path="/fitness-connect/register/" element={<RegisterSreen />} />
+                    <Route path="/fitness-connect/register/" element={<RegisterScreen />} />
                 </Routes>
             </div>
         </BrowserRouter>

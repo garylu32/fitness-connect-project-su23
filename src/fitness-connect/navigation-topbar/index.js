@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function NavigationTopBar() {
     return (
-        <nav className="navbar navbar-light bg-light justify-content-between mt-2 mb-2">
+        <nav className="navbar navbar-light bg-light justify-content-between mb-2 fixed-top">
             <div className="navbar-brand ms-3">
                 <a className="nav-link" href="/fitness-connect/home">FITNESS CONNECT</a>
             </div>

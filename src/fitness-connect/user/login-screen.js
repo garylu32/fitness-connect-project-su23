@@ -17,7 +17,7 @@ function LoginSreen() {
     return (
         <div>
             <NavigationTopBar />
-            <div className="container d-flex justify-content-center align-items-center">
+            <div className="container d-flex justify-content-center align-items-center pt-5">
                 <div className="row justify-content-center">
                     <div >
                         <div className="card mt-5" style={{ width: "24rem" }}>

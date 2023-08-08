@@ -5,7 +5,10 @@ function HomeScreen() {
     return (
         <div>
             <NavigationTopBar />
-            <h1>Welcome to Home Page FITNESS CONNECT</h1>
+            <div className="pt-5">
+                <h1>Welcome to Home Page FITNESS CONNECT</h1>
+            </div>
+
         </div>
     )
 };
