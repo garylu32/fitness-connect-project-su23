@@ -1,23 +1,27 @@
 import React from "react";
-import { BrowserRouter, Navigate } from "react-router-dom";
 import { Routes, Route } from "react-router";
-import HomeScreen from "./home-screen";
-import LoginSreen from "./user/login-screen";
-import RegisterScreen from "./user/register-screen";
+import { Box } from "@mui/material";
+import HomeScreen from "../pages/HomeScreen";
+import LoginSreen from "./user/LoginScreen";
+import RegisterScreen from "./user/RegisterScreen";
+import Footer from "./components/Footer";
+import ExerciseScreen from "../pages/ExerciseDetail";
 
 
 function FitnessConnect() {
     return (
-        <BrowserRouter>
+        <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
             <div className="container">
                 <Routes>
-                    <Route path="/" element={<Navigate to="/fitness-connect/home" />} />
-                    <Route path="/fitness-connect/home" element={<HomeScreen />} />
-                    <Route path="/fitness-connect/login/" element={<LoginSreen />} />
-                    <Route path="/fitness-connect/register/" element={<RegisterScreen />} />
+                    <Route path="/" element={<HomeScreen />} />
+                    <Route path="/login/" element={<LoginSreen />} />
+                    <Route path="/register/" element={<RegisterScreen />} />
+                    <Route path="/exercise/:id" element={<ExerciseScreen />} />
                 </Routes>
+                <Footer />
             </div>
-        </BrowserRouter>
+
+        </Box>
     );
 }
 
